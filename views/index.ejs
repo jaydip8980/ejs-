@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page </title>
+</head>
+<body>
+    <h1>
+        Ejs templet engine  
+    </h1>
+    <!-- print data to database -->
+    <h6><%= name %></h6>
+    <!-- creating variable  -->
+    <!-- <% var i= 10; %>
+    <%= i %> -->
+
+    <!-- coment in EJS -->
+    <!-- <%# my name is jaydip sarvaiya %> -->
+
+    <!-- if condition in EJS -->
+    <!-- <% if (id == 10) { %> 
+        this is 10
+        <% } else if(id == 11) { %>
+            this is 11
+            <% } else { %>
+                other NUmber
+                <% } %> -->
+
+    <!-- for Loop -->
+    <!-- <% for (i=0; i<= 4 ; i++){ for( j=0; j<= i; j++) { %> 
+        *
+        
+        <% } %> <br> <% } %> -->
+
+    <!--  for in loop -->
+    <% for( const key in marks ) {%>
+       subject <%= key %> :-
+        <%= marks[key] %> <br>
+
+        <%} %>
+</body>
+</html>
